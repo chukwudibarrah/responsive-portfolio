@@ -100,7 +100,7 @@ img {
 #firstApp {
   grid-area: firstApp;
   background-image: url(images/02-portfolio-3.jpg);
-  height: 50vh;
+  height: 80vh;
   background-size: cover;
   border: solid 4px aqua;
   margin: 10px;
@@ -111,7 +111,7 @@ img {
   background-image: url(images/02-portfolio-2.jpg);
   border: solid 4px aqua;
   margin: 10px;
-  height: 20vh;
+  height: 40vh;
 }
 
 #thirdApp {
