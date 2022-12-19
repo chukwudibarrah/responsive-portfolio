@@ -1,8 +1,7 @@
-/*
 * {
   box-sizing: border-box;
 }
-*/
+
 
 body {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -10,38 +9,164 @@ body {
 }
 
 header {
-  display: flex;
-  width: 100%;
+  display: grid;
+  grid-template-columns: 0.5fr 3.5fr;
+  background-color: gray;
+  height: 100px;
 }
 
 .logo {
-  padding: 30px;
+  padding-left: 30px;
   line-height: 1.7em;
   text-decoration: none;
   justify-items: start;
+  color: white;
 }
 
 nav {
   display: flex;
+  position: relative;
+  justify-content: flex-end;
+  align-items: center;
 }
 
 nav a {
   padding: 30px;
+  text-decoration: none;
+  color: white;
+}
+
+.hero-banner {
+  z-index: 0;
 }
 
 img {
-  
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: center;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin: 0;
+.hero-banner h2 {
+  position: relative;
+  float: right;
+  padding: 10px;
+  font-size: 45px;
+  margin-right: 20px;
+  margin-top: -140px;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.453);
+  color: white;
 }
 
-p {
-  margin: 0;
+.pageSection {
+  display: grid;
+  grid-template-columns: 20% 80%;
+}
+
+.pageSection h2 {
+  display: flex;
+  border-right: 5px solid darkblue;
+  font-size: 55px;
+  justify-content: flex-end;
+  text-align: right;
+  padding-right: 10px;
+  line-height: 0.8em;
+  color: darkblue;
+}
+
+.pageSection p {
+  padding: 30px;
+  margin-right: 30px;
+}
+
+/* Work section */
+
+/* Images */
+
+.imageParent {
+  display: grid;
+  padding: 20px;
+  height: auto;
+  margin-right: 30px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: 
+  "firstApp firstApp"
+  "secondApp thirdApp";
+}
+
+#firstApp {
+  grid-area: firstApp;
+  background-image: url(images/02-portfolio-3.jpg);
+  height: 80vh;
+  background-size: cover;
+  border: solid 2px aqua;
+  margin: 10px;
+}
+
+#secondApp {
+  grid-area: secondApp;
+  background-image: url(images/02-portfolio-2.jpg);
+  border: solid 2px aqua;
+  margin: 10px;
+}
+
+#thirdApp {
+  grid-area: thirdApp;
+  background-image: url(images/02-portfolio-1.jpg);
+  border: solid 2px aqua;
+  margin: 10px;
+}
+
+.featured {
+  height: 80vh;
+  background-size: cover;
+}
+
+.appGrid {
+  height: 30vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  align-items: center;
+  display: flex;
+  position: relative;
+}
+
+/* Overlay text */
+
+.imageParent h3 {
+  display: flex;
+}
+
+.imageParent a {
+  display: flex;
+  align-content: flex-end;
+  position: relative;
+  text-decoration: none;
+  color: black;
+  justify-content: left;
+  font-size: 20px;
+  background-color: aqua;
+}
+
+/* Contact me section */
+.contactDetails {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  padding: 30px;
+  text-decoration: none;
+}
+
+.contactDetails a {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+/* Footer */
+footer {
+  display: flex;
+  justify-content: center;
+  padding: 30px;
 }
