@@ -98,56 +98,96 @@ img {
 #firstApp {
   grid-area: firstApp;
   background-image: url(images/02-portfolio-3.jpg);
-  height: 80vh;
+  height: 50vh;
   background-size: cover;
-  border: solid 2px aqua;
+  border: solid 4px aqua;
   margin: 10px;
 }
 
 #secondApp {
   grid-area: secondApp;
   background-image: url(images/02-portfolio-2.jpg);
-  border: solid 2px aqua;
+  border: solid 4px aqua;
   margin: 10px;
+  height: 20vh;
 }
 
 #thirdApp {
   grid-area: thirdApp;
   background-image: url(images/02-portfolio-1.jpg);
-  border: solid 2px aqua;
+  border: solid 4px aqua;
   margin: 10px;
 }
 
 .featured {
-  height: 80vh;
-  background-size: cover;
+  background-color: aqua;
 }
 
 .appGrid {
-  height: 30vh;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  align-items: center;
-  display: flex;
-  position: relative;
 }
 
 /* Overlay text */
 
-.imageParent h3 {
-  display: flex;
+.imageParent a {
+  display: grid;
+  align-items: end;
+  color: black;
 }
 
-.imageParent a {
+#firstApp h3 {
   display: flex;
-  align-content: flex-end;
-  position: relative;
+  margin-bottom: 30px;
+  text-decoration: none;
+  font-size: 25px;
+  position: absolute;
+  background-color: aqua;
+  padding: 0px 20px 0px 20px;
+  line-height: 4em;
+}
+
+#firstApp p {
+  display: flex;
+  padding: 20px;
+  text-decoration: none;
+  margin-bottom: 30px;
+  line-height: 0em;
+  background-color: aqua;
+  position: absolute;
+}
+/*
+.appGrid a {
+  display: flex;
+  flex-wrap: wrap;
   text-decoration: none;
   color: black;
-  justify-content: left;
   font-size: 20px;
   background-color: aqua;
+}
+*/
+
+.appGrid h3 {
+  display: flex;
+  margin-bottom: 30px;
+  text-decoration: none;
+  font-size: 25px;
+  background-color: aqua;
+  padding: 0px 20px 0px 30px;
+  line-height: 3em;
+  position: absolute;
+}
+
+.appGrid p {
+  display: inline;
+  padding: 10px;
+  padding-left: 30px;
+  text-decoration: none;
+  margin-bottom: 30px;
+  line-height: 0em;
+  background-color: aqua;
+  position: absolute;
 }
 
 /* Contact me section */
