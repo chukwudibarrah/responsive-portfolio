@@ -67,7 +67,7 @@ img {
 .pageSection h2 {
   display: flex;
   border-right: 5px solid darkblue;
-  font-size: 55px;
+  font-size: 50px;
   justify-content: flex-end;
   text-align: right;
   padding-right: 10px;
@@ -78,6 +78,7 @@ img {
 .pageSection p {
   padding: 30px;
   margin-right: 30px;
+  font-size: 14px;
 }
 
 /* Work section */
@@ -157,16 +158,6 @@ img {
   background-color: aqua;
   position: absolute;
 }
-/*
-.appGrid a {
-  display: flex;
-  flex-wrap: wrap;
-  text-decoration: none;
-  color: black;
-  font-size: 20px;
-  background-color: aqua;
-}
-*/
 
 .appGrid h3 {
   display: flex;
@@ -209,4 +200,5 @@ footer {
   display: flex;
   justify-content: center;
   padding: 30px;
+  font-size: 12px;
 }
