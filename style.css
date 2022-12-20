@@ -1,11 +1,90 @@
+/* Set font family and height */
+body {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  line-height: 1.5;
+}
+
 * {
   box-sizing: border-box;
 }
 
-
-body {
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  line-height: 1.5;
+/* At size 768px and below */
+@media only screen and (max-width: 768px) {
+.hero-banner h2 {
+  font-size: xx-large;
+  }
+  
+  #firstApp {
+  height: 40vh;
+  }
+  
+#secondApp #thirdApp {
+  height: 15vh;
+  }
+  
+.appGrid h3 {
+  font-size: 15px;
+  line-height: 5em;
+  margin-bottom: 25px;
+  }
+  
+.pageSection h2 {
+  font-size: 30px;
+  }
+}
+  
+  
+/* At size 728px and below */
+@media only screen and (max-width: 728px) {
+  .appGrid h3 {
+  padding: 0px 20px 0px 20px;
+  }
+  
+  .appGrid p {
+  padding-left: 20px;
+  }
+  
+  .contactDetails {
+  font-size: 15px;
+  }
+}
+  
+  
+ /* At size 600px and below */
+@media only screen and (max-width: 600px) {
+.pageSection h2 {
+  font-size: 25px;
+  }
+  
+.pageSection p {
+  padding: 20px;
+  margin-right: 20px
+  font-size: 12px;
+  }
+  
+#firstApp {
+  margin:0px;
+  }
+  
+#firstApp h3 {
+  font-size: 20px;
+  margin-bottom: 40px;
+  padding: 0px 20px 10px 20px;
+  }
+  
+#firstApp p {
+  padding: 20px;
+  margin-bottom: 40px;
+  }
+  
+.appGrid h3 {
+  font-size: 13px;
+  padding: 0px 5px 0px 10px;
+  }
+  
+.appGrid p {
+  padding-left: 10px;
+  }
 }
 
 header {
